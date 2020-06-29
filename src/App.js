@@ -23,4 +23,8 @@ function App() {
   );
 }
 
+fetch('/users')
+.then(response => response.text())
+.then(data => console.log({data}));
+
 export default App;
