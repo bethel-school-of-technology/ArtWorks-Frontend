@@ -1,11 +1,12 @@
 import React from 'react';
-import {Nav, Navbar, Form, FormControl} from 'react-bootstrap';
+import {Nav, Navbar} from 'react-bootstrap';
 import styled from 'styled-components';
 
 const Styles=styled.div`
   .navbar { background-color: #222; }
   a, .navbar-nav, .navbar-light .nav-link {
     color: #9FFFCB;
+    height: 5em;
     &:hover { color: white; }
   }
   .navbar-brand {
