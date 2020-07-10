@@ -1,20 +1,25 @@
 import React, {Component} from 'react';
 import {FaAlignRight} from 'react-icons/fa';
 import './App.css';
+
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 import {BrowserRouter as Router, Route, Switch} from "react-router-dom";
 import {NavigationBar} from './components/NavigationBar';
+
 import {Home} from './Home';
 import {Gallery} from './Gallery';
+import Signup from './components/Signup';
+import history from "./utils/history";
 
 function App() {
     return (
         <React.Fragment>
-            <Router>
+            <Router history={history}>
                 <NavigationBar />
                 <Switch>
                     <Route exact path="/" component={Home} />
                     <Route path="/about" component={Gallery} />
+                    <Route path="/submit" component={Signup} />
                 </Switch>
             </Router>
         </React.Fragment>
