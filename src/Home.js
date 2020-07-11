@@ -1,11 +1,22 @@
 import React from 'react';
+import ReactDOM from 'react-dom';
 import styled from 'styled-components';
+import {Jumbotron} from 'react-bootstrap';
+import {Button} from 'react-bootstrap'
+import {Image} from 'react-bootstrap';
 
 
 export const Home=(props) => (
-    <GridWrapper>
-        <p>This is a paragraph and I am writing on the home page</p>
-        <p>Welcome to the second paragraph of the Home Page</p>
+    <GridWrapper className="container">
+        <Jumbotron className="jumbotron">
+          <div className="about">
+            <h1>Welcome to ArtWorks!</h1>
+              <p>
+                ArtWorks is a place where artists and their fans are empowered to change the world! We do this by holding quarterly competitions between submitted creations from artists who want to make a difference with their work. Our winning designs will be produced and sold as t-shirts with all profits going towards our selected charity. Check out this quarter's charity below!
+              </p>
+          </div>
+        </Jumbotron>
+       
     </GridWrapper>
 )
 

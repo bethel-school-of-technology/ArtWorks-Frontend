@@ -1,5 +1,5 @@
-import React, {Component} from 'react';
-import {FaAlignRight} from 'react-icons/fa';
+import React from 'react';
+import ReactDOM from 'react-dom';
 import './App.css';
 
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
@@ -11,7 +11,8 @@ import {Gallery} from './Gallery';
 import Signup from './components/Signup';
 import history from "./utils/history";
 
-function App() {
+
+ function App() {
     return (
         <React.Fragment>
             <Router history={history}>
