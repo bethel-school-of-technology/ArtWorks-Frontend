@@ -7,12 +7,12 @@ import {BrowserRouter as Router, Route, Switch} from "react-router-dom";
 import {NavigationBar} from './components/NavigationBar';
 
 import {Home} from './Home';
-import {Gallery} from './Gallery';
+import Gallery from './components/Gallery';
 import Signup from './components/Signup';
 import history from "./utils/history";
 
 
- function App() {
+function App() {
     return (
         <React.Fragment>
             <Router history={history}>
