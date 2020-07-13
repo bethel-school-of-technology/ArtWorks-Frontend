@@ -30,7 +30,7 @@
 
 /* Media screen size */
 
- @media screen and (min-width: 768px) {
+ /* @media screen and (min-width: 768px) {
     .navbutton {
         display: none;
     }
@@ -40,7 +40,7 @@
     }
     li {
         padding: 0 15px;
-    }
+    } */
 
 /* Home */
 .jumbotron {
