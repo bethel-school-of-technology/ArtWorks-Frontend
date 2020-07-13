@@ -1,9 +1,15 @@
-.Store{
-  text-align: center;
+.Store-img{
+ 
   background-image: url("https://frugalbeautiful.com/blog/wp-content/uploads/2012/08/charity-water.jpeg");
   position: fixed;
   min-width: 100%;
   min-height: 100%;
   background-size: cover;
-  background-position: center;
+ 
+}
+
+.Store-carousel-inner{
+  width: 70%;
+  margin: auto;
+
 }
