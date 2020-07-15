@@ -1,17 +1,19 @@
 import React from 'react';
+import './store.css';
 
 
 
  const Store = () => {
       return( 
- <div className="container bg-muted col-md-12" >
+
+ <body class="body">
         
-<nav className="navbar navbar-expand-sm bg-dark navbar-dark col-md-12">
+<nav className="navbar navbar-expand-sm bg-dark navbar-dark">
 
   <div className="collapse navbar-collapse" id="collapsibleNavbar">
     <ul className="navbar-nav">
       <li className="nav-item">
-        <a className="nav-link text-white" href="https://www.bonfire.com/">Purchase Art Work Here</a>
+        <a className="nav-link" href="https://www.bonfire.com/">Purchase Art Work Here</a>
       </li>   
     </ul>
   </div>  
@@ -21,7 +23,7 @@ import React from 'react';
 
 
 < div class="row">
-<div className="col-sm-12 text-center">
+<div class="col-sm-12 text-center" id="title">
 <h2 class="text-center">What happens When you Purchase Winning Art Work?</h2>
 
 <h5> Provide clean water to those without</h5>
@@ -31,7 +33,7 @@ import React from 'react';
 </div>
 
 
-<div class="col-sm-12">
+<div class="col-md-12">
  <div id="carouselExampleControls" className="carousel slide" data-ride="carousel">
    <div className="carousel-inner">
     <div className="carousel-item active">
@@ -76,7 +78,7 @@ import React from 'react';
   </div>
   </div>
   </div>
-  </div>
+  </body>
   
   );
    
