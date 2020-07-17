@@ -1,5 +1,5 @@
 import React from 'react';
-import './store.css';
+import './Store.css';
 
 
 
@@ -27,7 +27,7 @@ import './store.css';
 <h2 class="text-center">What happens When you Purchase Winning Art Work?</h2>
 
 <h5> Provide clean water to those without</h5>
-<h5>Provide a future to those </h5>
+<h5>Provide a future of hope to those that might not of had one </h5>
 <h5>Bring Life</h5>
 
 </div>
