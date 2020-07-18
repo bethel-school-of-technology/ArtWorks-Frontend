@@ -1,38 +1,60 @@
-.App {
-  text-align: center;
+
+#root {
+    background-color: rgb(219, 202, 219);
+}
+ li {   
+   padding: 10px 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Class */
+
+.navBar {
+    width: 100%;
+    height: 20em;
+    background-color: #111;
+    color: white;
+    padding: 10px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.links {
+    height: 0;
+    overflow: hidden;
+    list-style-type: none;
+    font-weight: bold;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.show-nav {
+    height: 120px;
 }
 
-.App-link {
-  color: #61dafb;
-}
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Media screen size */
+
+ /* @media screen and (min-width: 768px) {
+    .navbutton {
+        display: none;
+    }
+    .links {
+        height: auto;
+        display: flex;
+    }
+    li {
+        padding: 0 15px;
+    } */
+
+/* Home */
+.jumbotron {
+    background-position: center;
+    background-image: url("./assets/jumboimg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+}
+.about {
+    background-color: rgba(250, 204, 204, 0.89);
+    padding: 4em;
+}
+.about p {
+    font: bolder;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
