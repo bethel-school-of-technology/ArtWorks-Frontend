@@ -1,4 +1,5 @@
 import React from 'react';
+import Store from './Store';
 import ReactDOM from 'react-dom';
 import './App.css';
 
@@ -21,6 +22,7 @@ function App() {
                     <Route exact path="/" component={Home} />
                     <Route path="/about" component={Gallery} />
                     <Route path="/submit" component={Signup} />
+                  <Route path="/store" component={Store} />
                 </Switch>
             </Router>
         </React.Fragment>
