@@ -1,18 +1,15 @@
 import React from 'react';
 import Store from './Store';
-import ReactDOM from 'react-dom';
 import './App.css';
 
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import { NavigationBar } from './components/NavigationBar';
-
+import AWFooter from './components/AWFooter';
 import { Home } from './Home';
 import Gallery from './components/Gallery';
 import Signup from './components/Signup';
 import history from "./utils/history";
-import { Component } from 'react';
-
 
 
 function App () {
@@ -27,6 +24,7 @@ function App () {
                   <Route path="/store" component={Store} />
                 </Switch>
             </Router>
+            <AWFooter/>
         </React.Fragment>
     )
 }

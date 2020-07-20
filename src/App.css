@@ -1,6 +1,6 @@
 
 #root {
-    background-color: rgb(219, 202, 219);
+    background-color: slategray;
 }
  li {   
    padding: 10px 0;
@@ -43,6 +43,7 @@ footer img {
     overflow: hidden;
     list-style-type: none;
     font-weight: bold;
+    font: white;
 }
 
 .show-nav {
@@ -76,4 +77,15 @@ footer img {
     background-color: rgba(250, 204, 204, 0.89);
     padding: 4em;
 }
- }
+.charitycarousel {
+    padding: 2em;
+    margin: 2em;
+    height: 50em;
+    width: 50em;
+    background-color: slategray;
+    
+}
+.charitycarousel img {
+    width: auto;
+}
+ 
