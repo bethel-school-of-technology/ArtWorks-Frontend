@@ -11,6 +11,8 @@ import { Home } from './Home';
 import Gallery from './components/Gallery';
 import Signup from './components/Signup';
 import history from "./utils/history";
+import { Component } from 'react';
+
 
 
 function App () {
