@@ -5,6 +5,28 @@
  li {   
    padding: 10px 0;
 }
+footer {
+    background: black;
+    font: white;
+    font-size: medium;
+    position: fixed;
+    height: 25em;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+footer h2 {
+    color: white;
+}
+footer div {
+    position: center;
+    align-items: center;
+}
+footer img {
+    height: 13em;
+    width: auto;
+    
+}
 
 /* Class */
 
@@ -54,7 +76,4 @@
     background-color: rgba(250, 204, 204, 0.89);
     padding: 4em;
 }
-.about p {
-    font: bolder;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
+ }
