@@ -3,7 +3,7 @@ import Store from './Store';
 import './App.css';
 
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { Router, Route, Switch } from "react-router-dom";
 import { NavigationBar } from './components/NavigationBar';
 import AWFooter from './components/AWFooter';
 import { Home } from './Home';
@@ -19,6 +19,7 @@ function App () {
                 <NavigationBar />
                 <Switch>
                     <Route exact path="/" component={Home} />
+                    <Route exact path="/home" component={Home} />
                     <Route path="/gallery" component={Gallery} />
                     <Route path="/submit" component={Signup} />
                   <Route path="/store" component={Store} />
@@ -32,5 +33,6 @@ function App () {
 fetch('/users')
     .then(response => response.text())
     .then(data => console.log({ data }));
+
 
 export default App;
