@@ -1,9 +1,26 @@
 
 #root {
-    background-color: rgb(219, 202, 219);
+    background-color: slategray;
 }
  li {   
    padding: 10px 0;
+}
+footer {
+    background: black;
+    font: white;
+    font-size: medium;
+    position: fixed;
+    height: 25em;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+footer h2 {
+    color: white;
+}
+footer img {
+    height: 13em;
+    width: auto;  
 }
 
 /* Class */
@@ -21,6 +38,7 @@
     overflow: hidden;
     list-style-type: none;
     font-weight: bold;
+    font: white;
 }
 
 .show-nav {
@@ -54,6 +72,7 @@
     background-color: rgba(250, 204, 204, 0.89);
     padding: 4em;
 }
+
 .about p {
     font: bolder;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -140,3 +159,30 @@
     .artist-name {
         text-align: center
     }
+
+.charitycarousel {
+    padding: 2em;
+    margin: 2em;
+    height: 50em;
+    width: 50em;
+    background-color: slategray;
+    
+}
+.charitycarousel img {
+    width: auto;
+}
+.charityinfo {
+    padding: 2.5em;
+    margin: 2.5em;
+    background-color: white;
+    font-size: large;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+    justify-content: center;
+}
+#cwbutton {
+    font-size: medium;
+}
+
+ 
+

@@ -1,31 +1,30 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
-import styled from 'styled-components';
-import {Jumbotron} from 'react-bootstrap';
-import {Button} from 'react-bootstrap'
-import {Image} from 'react-bootstrap';
-
+import AWJumbotron from './components/AWJumbotron';
+import {Container, Row, Col} from 'react-bootstrap';
+import CWCarousel from './components/CWCarousel';
+import {Button} from 'react-bootstrap';
+import CWLogo from './assets/charitywaterlogo.png';
+import AWFooter from './components/AWFooter';
 
 export const Home=(props) => (
-    <GridWrapper className="container">
-        <Jumbotron className="jumbotron">
-          <div className="about">
-            <h1>Welcome to ArtWorks!</h1>
-              <p>
-                ArtWorks is a place where artists and their fans are empowered to change the world! We do this by holding quarterly competitions between submitted creations from artists who want to make a difference with their work. Our winning designs will be produced and sold as t-shirts with all profits going towards our selected charity. Check out this quarter's charity below!
-              </p>
-          </div>
-        </Jumbotron>
-       
-    </GridWrapper>
+      <div>
+        <AWJumbotron/>
+        <Container>
+          <Row>
+            <Col>
+            <CWCarousel></CWCarousel>
+            </Col>
+            <Col className='charityinfo'>
+              <img src={CWLogo} alt=''></img>
+            <h2>Charity: Water</h2>
+            <p>charity: water is a nonprofit organization bringing clean and safe drinking water to people in developing countries. To learn more about Charity: Water's mission, click the link below!</p>
+            <Button id='cwbutton' href="https://www.charitywater.org/about/mission" variant="warning">Charity: Water </Button>
+            </Col>
+          </Row>
+        </Container>
+        <AWFooter/>
+      </div>
+    
 )
 
-const GridWrapper=styled.div`
-  display: grid;
-  grid-gap: 10px;
-  margin-top: 1em;
-  margin-left: 6em;
-  margin-right: 6em;
-  grid-auto-rows: minmax(25px, auto);
-`;
-// grid-template-columns: repeat(12, 1fr);
+
