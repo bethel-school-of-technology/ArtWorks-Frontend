@@ -3,33 +3,45 @@ import { Nav, Navbar } from 'react-bootstrap';
 import styled from 'styled-components';
 
 const Styles=styled.div`
-  .navbar { background-color: #222; }
+  .navbar { 
+      background-color: #222; 
+    }
+
+    .navbar-collapse
+
   a, .navbar-nav, .navbar-light .nav-link {
-    color: #9FFFCB;
-    height: 5em;
+    color:  rgb(219, 202, 219);
+    height: 2.5em;
     &:hover { color: white; }
+    font-size: 1.3em;
+    float: left;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+
+
   }
+
+
   .navbar-brand {
-    font-size: 1.4em;
-    color: #9FFFCB;
+    font-size: 2.2em;
+    color:  rgb(219, 202, 219);
     &:hover { color: white; }
   }
-  .form-center {
-    position: absolute !important;
-    left: 25%;
-    right: 25%;
-  }
+
   
   @media screen and (min-width: 768px) {
     button {
         display: none;
+        color: white;
     }
     .links {
         height: auto;
-        display: flex;
+        display: auto;
     }
     li {
-        padding: 0 15px;
+        padding: 15px;
+        backgroung-color: black;
     }
 }
 `;
