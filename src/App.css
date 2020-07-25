@@ -18,14 +18,9 @@ footer {
 footer h2 {
     color: white;
 }
-footer div {
-    position: center;
-    align-items: center;
-}
 footer img {
     height: 13em;
-    width: auto;
-    
+    width: auto;  
 }
 
 /* Class */
@@ -88,4 +83,17 @@ footer img {
 .charitycarousel img {
     width: auto;
 }
+.charityinfo {
+    padding: 2.5em;
+    margin: 2.5em;
+    background-color: white;
+    font-size: large;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+    justify-content: center;
+}
+#cwbutton {
+    font-size: medium;
+}
+
  
