@@ -36,7 +36,7 @@ class App extends Component {
             backdrop=<Backdrop click={this.backdropClickHandler} />
         }
         return (
-            <div style={{ marginTop: '64px', marginBottom: '64px' }}>
+            <div style={{ marginTop: '50px', marginBottom: '57px' }}>
                 <React.Fragment>
                     <Router history={history}>
 

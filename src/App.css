@@ -44,10 +44,15 @@ width: 50%;
       }
   
   .gallery{
-    background-image: url("./assets/background.jpeg");
     background-color: #cccccc;
     background-size: cover;
   
+  }
+
+  .wrapper {
+    background:   rgb(248, 239, 186,0.75);
+    padding: 20px;
+    color: #fff;
   }
     .grid-container {
       display: grid;
@@ -58,7 +63,7 @@ width: 50%;
     .contentWrapper{
       text-align: center;
       padding: 5px;
-      border: 3px solid black;
+      border: 3px solid #123f62;
     }
   
     .voteButton{
@@ -86,8 +91,10 @@ width: 50%;
     }
   
     .each-grid {
-      border: 3px solid black;
+      border: 3px solid #123f62;
       background-color: white;
+      font-family: URW Chancery L, cursive;
+      padding: 1rem;
     }
   
     .grid-container {

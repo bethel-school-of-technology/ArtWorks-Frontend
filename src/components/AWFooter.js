@@ -13,7 +13,7 @@ const AWFooter=() => {
         <div className="footer-items">
           <ul>
             <li>Contact us!</li>
-            <li><a href="mailto:info@ellianaolivia.com">info@ellianaolivia.com</a></li>
+            <li><a href="mailto:info@artworks.com">info@artworks.com</a></li>
           </ul>
         </div>
       </footer>
