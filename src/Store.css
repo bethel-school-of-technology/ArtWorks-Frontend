@@ -8,28 +8,43 @@
   
 }
 
-h2{
-  font-family:Arial, Helvetica, sans-serif;
-  color:white;
+h1{
+  font-family: URW Chancery L;
+  color: rgb(18,63,98);
+  font-weight: bold;
 
 }
 
-.body{
+body{
   background: url(http://www.pixelstalk.net/wp-content/uploads/2016/05/Watercolor-wallpaper-backgrounds-pictures.jpg) no-repeat center fixed;
   background-size: cover;
+
 }
 
-h5{
-  font-family: Arial, Helvetica, sans-serif;
-  color:white;
+h2{
+  font-family: URW Chancery L, cursive;
+  color:rgb(18,63,98);
+
+}
+
+.nav-link {
+  font-size: 1em;
+  font-family: URW Chancery L, cursive;
+  color:rgb(18,63,98);
+  text-decoration: underline;
 
 }
 
 .col-sm-12{
   margin:1rem;
-  background: rgba(252, 214, 4, 0.73);
+  background:   rgb(248, 239, 186,0.75);
   padding: 20px;
   color: #fff;
   text-align: center;
   font-size: 26px;
+}
+
+.carousel-item img {
+  width: 100%;
+  height: auto;
 }

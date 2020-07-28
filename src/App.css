@@ -2,65 +2,23 @@
 #root {
     background-color: slategray;
 }
- li {   
+
+li {   
    padding: 10px 0;
 }
-footer {
-    background: black;
-    font: white;
-    font-size: medium;
-    position: fixed;
-    height: 25em;
-    width: 100%;
-    align-items: center;
-    justify-content: center;
-}
-footer h2 {
-    color: white;
-}
-footer img {
-    height: 13em;
-    width: auto;  
-}
 
-/* Class */
-
-.navBar {
-    width: 100%;
-    height: 20em;
-    background-color: #111;
-    color: white;
-    padding: 10px;
-}
-
-.links {
-    height: 0;
-    overflow: hidden;
-    list-style-type: none;
-    font-weight: bold;
-    font: white;
-}
-
-.show-nav {
-    height: 120px;
-}
-
-
-/* Media screen size */
-
- /* @media screen and (min-width: 768px) {
-    .navbutton {
-        display: none;
-    }
-    .links {
-        height: auto;
-        display: flex;
-    }
-    li {
-        padding: 0 15px;
-    } */
 
 /* Home */
+.artworks-logo img {
+  box-shadow: 5px 5px 5px 5px rgba(0,0,0,0.75);
+display: block;
+margin-top: 2em;
+margin-left: auto;
+margin-right: auto;
+width: 50%;
+
+}
+
 .jumbotron {
     background-position: center;
     background-image: url("./assets/jumboimg.jpg");
@@ -86,10 +44,15 @@ footer img {
       }
   
   .gallery{
-    background-image: url("./assets/background.jpeg");
     background-color: #cccccc;
     background-size: cover;
   
+  }
+
+  .wrapper {
+    background:   rgb(248, 239, 186,0.75);
+    padding: 20px;
+    color: #fff;
   }
     .grid-container {
       display: grid;
@@ -100,7 +63,7 @@ footer img {
     .contentWrapper{
       text-align: center;
       padding: 5px;
-      border: 3px solid black;
+      border: 3px solid #123f62;
     }
   
     .voteButton{
@@ -128,8 +91,10 @@ footer img {
     }
   
     .each-grid {
-      border: 3px solid black;
+      border: 3px solid #123f62;
       background-color: white;
+      font-family: URW Chancery L, cursive;
+      padding: 1rem;
     }
   
     .grid-container {
@@ -184,5 +149,45 @@ footer img {
     font-size: medium;
 }
 
- 
+/* Nav Bar */
 
+/* a, .navbar-nav, .navbar-light .nav-link {
+  color:  white;
+  height: 2.5em;
+  font-size: 1.3em;
+  float: left;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+a, .navbar-nav, .navbar-light .nav-link:hover {
+  color: white;
+}
+
+
+.navbar-brand {
+  font-size: 2.2em;
+  color:  slategray;
+}
+
+.navbar-brand:hover {
+  color: white;
+}
+
+
+@media screen and (min-width: 768px) {
+  button {
+      display: none;
+      color: white;
+  }
+  .links {
+      height: auto;
+      display: auto;
+  }
+  li {
+      padding: 15px;
+      background-color: black;
+  }
+}
+ */
