@@ -37,7 +37,7 @@ class Gallery extends Component {
     this.setState({
       count: newCount
     })
-    axios.post('http://localhost:3001/users/gallery/'+ this.state.artists[index]._id,{count:newCount[index]})
+    axios.post('http://localhost:3001/users/gallery'+ this.state.artists[index]._id,{count:newCount[index]})
     .then(res => {
       console.log(res);
     }

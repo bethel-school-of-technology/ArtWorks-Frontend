@@ -22,7 +22,6 @@ export const Home=(props) => (
             </Col>
           </Row>
         </Container>
-        <AWFooter/>
       </div>
     
 )
