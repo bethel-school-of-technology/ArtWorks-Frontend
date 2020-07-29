@@ -9,6 +9,7 @@ import Logo from './assets/Artworkslogo.png';
 
 
 export const Home=(props) => (
+
   <div className="home">
     
       <div>
@@ -53,7 +54,18 @@ export const Home=(props) => (
          
           </Col>
           <Col>
-          <Col className='charityinfo'>
+
+  <div>
+    <div className="artworks-logo"><img src={Logo} alt=""/> </div>
+    <br />
+    <AWJumbotron />
+    <Container>
+      <Row>
+        <Col>
+          <CWCarousel></CWCarousel>
+        </Col>
+        <Col className='charityinfo'>
+
           <img src={CWLogo} alt=''></img>
           <h2>Charity: Water</h2>
           <p>charity: water is a nonprofit organization bringing clean and safe drinking water to people in developing countries. To learn more about Charity: Water's mission, click the link below!</p>
