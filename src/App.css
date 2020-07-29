@@ -1,7 +1,7 @@
 
-#root {
+/*#root {
     background-color: slategray;
-}
+}*/
 
 li {   
    padding: 10px 0;
@@ -21,13 +21,13 @@ width: 50%;
 
 .jumbotron {
     background-position: center;
-    background-image: url("./assets/jumboimg.jpg");
+    background-image: url("https://c2.staticflickr.com/8/7155/6616896867_fdfe7b55d1_b.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
 }
 .about {
-    background-color: rgba(250, 204, 204, 0.89);
+    background-color: rgba(238, 238, 215, 0.89);
     padding: 4em;
 }
 
@@ -127,26 +127,33 @@ width: 50%;
 
 .charitycarousel {
     padding: 2em;
-    margin: 2em;
-    height: 50em;
-    width: 50em;
-    background-color: slategray;
+    margin-top: 2em;
+    margin-left:2em;
+    height: 30em;
+    width: 40em;
+    background-color: rgb(223, 207, 71);
+    margin-bottom: 2em;
     
 }
-.charitycarousel img {
-    width: auto;
+.Cimage {
+  width:100%;
+  height:auto;
+  height: 30em;
+    width: 40em;
 }
-.charityinfo {
-    padding: 2.5em;
-    margin: 2.5em;
-    background-color: white;
+.col-md-4 {
+    background-color: rgb(255, 255, 255);
     font-size: large;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-weight: bold;
     justify-content: center;
+    text-align: left;
+    margin-top:2em;
+    margin-left: 1em;
 }
 #cwbutton {
     font-size: medium;
+    margin-bottom: 30px;
 }
 
 /* Nav Bar */
