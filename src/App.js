@@ -30,7 +30,7 @@ class App extends Component {
     };
 
     render () {
-        let sideDrawer;
+        // let sideDrawer;
         let backdrop;
         if (this.state.sideDrawerOpen) {
             backdrop=<Backdrop click={this.backdropClickHandler} />

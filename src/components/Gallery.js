@@ -47,10 +47,10 @@ class Gallery extends Component {
 
   render () {
     return (
-      <body className="gallery">
+      <div className="gallery">
         <div className="wrapper">
           <header className="gHeader">
-            <img src={Header} className="gallery-img" />
+            <img src={Header} className="gallery-img" alt=""/>
           </header>
         </div>
 
@@ -59,7 +59,7 @@ class Gallery extends Component {
             {this.state.artists.map((art, index) => (
               <div className="each-grid" key={index}>
                 <div className="artist-name" ><h4>{art.Name}</h4></div>
-                <div  > <img src={art.Photo} className="art-photo" /></div>
+                <div  > <img src={art.Photo} className="art-photo" alt=""/></div>
                 <div>
                   <button className="voteButton" onClick={() => this.incrementMe(index)}>Vote: {this.state.count[index]} </button>
                 </div>
@@ -73,7 +73,7 @@ class Gallery extends Component {
             ))}
           </div>
         </section>
-      </body>
+     </div>
     )
   }
 }
