@@ -9,7 +9,7 @@ import Logo from './assets/Artworkslogo.png';
 
 export const Home=(props) => (
   <div>
-    <div className="artworks-logo"><img src={Logo} /> </div>
+    <div className="artworks-logo"><img src={Logo} alt=""/> </div>
     <br />
     <AWJumbotron />
     <Container>
