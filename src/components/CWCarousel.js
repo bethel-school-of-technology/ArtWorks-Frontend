@@ -10,25 +10,25 @@ const CWCarousel = () => {
     return (
         <Carousel className='charitycarousel'>
         <Carousel.Item>
-          <img className="d-block w-100"
+          <img className="Cimage"
             src={CharityImg1}
             alt=""
           />
         </Carousel.Item>
         <Carousel.Item>
-          <img className="d-block w-100"
+          <img className="Cimage"
             src={CharityImg3}
             alt=""
           />
         </Carousel.Item>
         <Carousel.Item>
-          <img className="d-block w-100"
+          <img className="Cimage"
             src={CharityImg4}
             alt=""
           />
         </Carousel.Item>
         <Carousel.Item>
-          <img className="d-block w-100"
+          <img className="Cimage"
             src={CharityImg5}
             alt=""
           />

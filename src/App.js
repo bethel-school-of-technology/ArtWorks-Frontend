@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import Store from './Store';
 import './App.css';
 
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
@@ -8,9 +7,10 @@ import NavigationBar from './components/NavBar/NavigationBar';
 import SideDrawer from './components/SideDrawer/SideDrawer';
 import Backdrop from './components/Backdrop/Backdrop';
 import AWFooter from './components/AWFooter';
-import { Home } from './Home';
+import {Home} from './Home';
 import Gallery from './components/Gallery';
 import Signup from './components/Signup';
+import Store from './Store';
 import history from "./utils/history";
 
 

@@ -12,9 +12,10 @@ class Gallery extends Component {
     count: [],
     visible: true,
     loading: true,
-    artists: []
+    artists: [],
+    voted: []
   }
-  componentWillMount () {
+  componentDidMount () {
     axios.get('http://localhost:3001/users/gallery').then(res => {
       console.log(res.data.artworks);
       this.setState({ artists: res.data.artworks });
@@ -23,6 +24,11 @@ class Gallery extends Component {
         let temp=this.state.count;
         temp.push(this.state.artists[i].Votes);
         this.setState({ count: temp });
+
+        let tempVoted= this.state.voted;
+        tempVoted.push(false);
+        this.setState({voted: tempVoted});
+
       }
       console.log(this.state.count);
 
@@ -30,19 +36,27 @@ class Gallery extends Component {
   }
 
   incrementMe=(index) => {
-    let newCount=this.state.count
-    for (let i=0; i<newCount.length; i++) {
-      if (i===index) {
-        newCount[i]++
-      }
-    }
+    let newCount=this.state.count;
+    if (this.state.voted[index] === false) {
+      
+   
+    newCount[index]++;
+    this.state.voted[index] = true;
+    // for (let i=0; i<newCount.length; i++) {
+    //   if (i===index) {
+    //     newCount[i]++
+    //   }
+    // }
     this.setState({
       count: newCount
     })
     axios.post('http://localhost:3001/users/gallery/'+this.state.artists[index]._id, { count: newCount[index] })
       .then(res => {
         console.log(res);
-      })
+      }) } else {
+        window.alert('Sorry! You can only vote once per entry.');
+      }
+      
   }
 
   render () {
@@ -54,16 +68,20 @@ class Gallery extends Component {
           </header>
         </div>
 
-        <section class="art-grid" >
-          <div class="grid-container">
+        <section className="art-grid" >
+          <div className="grid-container">
             {this.state.artists.map((art, index) => (
               <div className="each-grid" key={index}>
                 <div className="artist-name" ><h4>{art.Name}</h4></div>
+<<<<<<< HEAD
                 <div  > <img src={art.Photo} className="art-photo" alt=""/></div>
+=======
+                <div  > <img src={art.Photo} className="art-photo" alt="" /></div>
+>>>>>>> 6ae77af7a50cf70599a351b1a089404a04c8a5cd
                 <div>
                   <button className="voteButton" onClick={() => this.incrementMe(index)}>Vote: {this.state.count[index]} </button>
                 </div>
-                <div className="artist-email" ><img src={Email} class="email-logo" alt="email" />{art.Email}</div>
+                <div className="artist-email" ><img src={Email} className="email-logo" alt="email" />{art.Email}</div>
                 <div>
                   <a href="https://www.instagram.com" ><img src={Instagram} title="instaLink" className="logo" alt="" /></a>
                   <a href="https://www.facebook.com" ><img src={Facebook} title="fbLink" className="logo" alt="" /></a>
@@ -73,7 +91,11 @@ class Gallery extends Component {
             ))}
           </div>
         </section>
+<<<<<<< HEAD
      </div>
+=======
+      </div>
+>>>>>>> 6ae77af7a50cf70599a351b1a089404a04c8a5cd
     )
   }
 }
