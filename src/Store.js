@@ -1,5 +1,7 @@
 import React from 'react';
 import './Store.css';
+import {Row,Col}from 'react-bootstrap';
+import { Button } from 'react-bootstrap';
 
 
 
@@ -7,21 +9,6 @@ const Store=() => {
   return (
 
     <body className="body">
-
-      {/* <nav className="navbar navbar-expand-sm bg-dark navbar-dark">
-
-  <div className="collapse navbar-collapse" id="collapsibleNavbar">
-    <ul className="navbar-nav">
-      <li className="nav-item">
-        <a className="nav-link" href="https://www.bonfire.com/">Purchase Art Work Here</a>
-      </li>   
-    </ul>
-  </div>  
-</nav> */}
-
-
-
-
       < div class="row">
         <div class="col-sm-12 text-center" id="title">
           <h1 class="text-center">What happens When you Purchase Winning Art Work?</h1>
@@ -29,11 +16,9 @@ const Store=() => {
           <h2> Provide clean water to those without</h2>
           <h2>Provide a future of hope to those that might not of had one </h2>
           <h2>Bring Life</h2>
-          <a className="nav-link" href="https://www.bonfire.com/">Purchase Art Work Here</a>
-
+         <Button id='cwbutton' href="https://www.bonfire.com/" variant="info">Purchase Here</Button>
 
         </div>
-
 
         <div class="col-md-12">
           <div id="carouselExampleControls" className="carousel slide" data-ride="carousel">
@@ -57,6 +42,7 @@ const Store=() => {
 
 
                 </div>
+                </div>
               </div>
             </div>
 
@@ -70,12 +56,14 @@ const Store=() => {
               <span className="sr-only">Next</span>
             </a>
 
+            
+
             <footer class="bg-warning">
               <p ></p>
             </footer>
 
           </div>
-        </div>
+       
       </div>
     </body>
 
@@ -84,8 +72,6 @@ const Store=() => {
 }
 
 export default Store
-
-
 
 
 

@@ -22,18 +22,12 @@ body{
 }
 
 h2{
-  font-family: URW Chancery L, cursive;
+  font-family: URW Chancery L;
   color:rgb(18,63,98);
 
 }
 
-.nav-link {
-  font-size: 1em;
-  font-family: URW Chancery L, cursive;
-  color:rgb(18,63,98);
-  text-decoration: underline;
 
-}
 
 .col-sm-12{
   margin:1rem;
