@@ -73,11 +73,7 @@ class Gallery extends Component {
             {this.state.artists.map((art, index) => (
               <div className="each-grid" key={index}>
                 <div className="artist-name" ><h4>{art.Name}</h4></div>
-<<<<<<< HEAD
                 <div  > <img src={art.Photo} className="art-photo" alt=""/></div>
-=======
-                <div  > <img src={art.Photo} className="art-photo" alt="" /></div>
->>>>>>> 6ae77af7a50cf70599a351b1a089404a04c8a5cd
                 <div>
                   <button className="voteButton" onClick={() => this.incrementMe(index)}>Vote: {this.state.count[index]} </button>
                 </div>
@@ -91,11 +87,7 @@ class Gallery extends Component {
             ))}
           </div>
         </section>
-<<<<<<< HEAD
      </div>
-=======
-      </div>
->>>>>>> 6ae77af7a50cf70599a351b1a089404a04c8a5cd
     )
   }
 }
