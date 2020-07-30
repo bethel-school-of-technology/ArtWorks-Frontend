@@ -10,26 +10,26 @@ import './CWCarousel.css'
 const CWCarousel=() => {
   return (
     <Carousel className='charitycarousel'>
-      <Carousel.Item className="carousel-item">
-        <img className="Cimage1"
+      <Carousel.Item>
+        <img
           src={CharityImg1}
           alt=""
         />
       </Carousel.Item>
       <Carousel.Item>
-        <img className="Cimage2"
+        <img
           src={CharityImg3}
           alt=""
         />
       </Carousel.Item>
       <Carousel.Item>
-        <img className="Cimage3"
+        <img
           src={CharityImg4}
           alt=""
         />
       </Carousel.Item>
       <Carousel.Item>
-        <img className="Cimage4"
+        <img
           src={CharityImg5}
           alt=""
         />
