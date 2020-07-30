@@ -1,6 +1,6 @@
 .side-drawer {
     height: 100%;
-    background: #222;
+    background:rgb(18,63,98);
     box-shadow: 1px 0px 7px rgba(0, 0, 0, 0.5);
     position: fixed;
     top: 0;
@@ -21,22 +21,35 @@
     list-style: none;
     display: flex;
     flex-direction: column;
-    justify-content: center
+    justify-content: top;
 }
 
 .side-drawer li {
     margin: 0.5rem 0;
 }
 
+.side-drawer img {  
+    display: block;
+    height: auto;
+    width: 75%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+.side-drawer-logo {
+    text-align: center;
+}
 .side-drawer a {
     color: white;
     text-decoration: none;
-    font-size: 1.2rem;
+    font-size: 1.7rem;
+    padding: 1rem;
+    font-family: URW Chancery L, cursive;
 }
 
 .side-drawer a:hover,
 .side-drawer a:active {
-    color: rgb(14, 168, 176);
+    color: rgb(248, 239, 186);
 }
 
 @media (min-width: 769px) {

@@ -10,27 +10,26 @@ import Logo from './assets/Artworkslogo.png';
 
 export const Home=(props) => (
 
-  <div className="home">
-    
-      <div>
+  <body className="home">
+
+    <div>
       <AWJumbotron />
+    </div>
+
+    <section className="row1">
+      <div className='grid-1'>
+        <img src={CWLogo} alt=''></img>
+        <h2>Charity: Water</h2>
+        <p>charity: water is a nonprofit organization bringing clean and safe drinking water to people in developing countries. To learn more about Charity: Water's mission, click the link below!</p>
+        <Button id='cwbutton' href="https://www.charitywater.org/about/mission" variant="warning">Charity: Water </Button>
       </div>
-  
-      <div class="row1">
-     
-      <div className='col-md-4'>
-            <img src={CWLogo} alt=''></img>
-            <h2>Charity: Water</h2>
-            <p>charity: water is a nonprofit organization bringing clean and safe drinking water to people in developing countries. To learn more about Charity: Water's mission, click the link below!</p>
-            <Button id='cwbutton' href="https://www.charitywater.org/about/mission" variant="warning">Charity: Water </Button>
+      <div className="grid-2">
+        <CWCarousel />
       </div>
-      <div className="col-md-5">
-         <CWCarousel/>
-      </div>
-  
-  </div>
-  </div>
- 
+
+    </section>
+  </body>
+
 )
 
 

@@ -1,33 +1,17 @@
 
-/*#root {
-    background-color: slategray;
-}*/
-
-li {   
-   padding: 10px 0;
-}
-
-
 /* Home */
-.artworks-logo img {
-  box-shadow: 5px 5px 5px 5px rgba(0,0,0,0.75);
-display: block;
-margin-top: 2em;
-margin-left: auto;
-margin-right: auto;
-width: 50%;
 
-}
-
-.jumbotron {
+.jumbotron-body {
     background-position: center;
-    background-image: url("https://c2.staticflickr.com/8/7155/6616896867_fdfe7b55d1_b.jpg");
+    color: #123f62;
+    background-image: url("./assets/background-color.png");
     background-repeat: no-repeat;
     background-size: cover;
     box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    min-width: 450px;
 }
 .about {
-    background-color: rgba(238, 238, 215, 0.89);
+    background-color: rgba(255, 244, 149, 0.87);
     padding: 4em;
 }
 
@@ -35,6 +19,62 @@ width: 50%;
     font: bolder;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
+
+.home {
+  padding: 2rem;
+  margin: 2rem 0;
+}
+
+.row1 {
+  display: grid;
+  background-color:  rgb(223, 207, 71,0.7);
+  grid-template-columns: repeat(auto-fill, minmax(500px,1fr)); 
+  justify-content: center;
+  align-content: center;
+  grid-gap: 50px;
+  padding: 1.5em;
+  min-width: 450px;
+   margin: 2rem; 
+} 
+
+
+.grid-1 {
+    background-color: rgb(255, 255, 255);
+    font-size: large;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    margin: auto;
+    min-width: 400px;
+    max-width: 550px;
+    height: 500px;
+}
+
+.grid-1 img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.grid-1 p {
+  padding: 1em;
+}
+
+#cwbutton {
+    font-size: medium;
+}
+
+.grid-2 {
+  justify-content: center;
+  align-content: center;
+  min-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
 
 /* Gallery */
 .gHeader {
@@ -44,9 +84,13 @@ width: 50%;
       }
   
   .gallery{
-    background-color: #cccccc;
     background-size: cover;
   
+  }
+
+  .gallery-img {
+    width: 100%;
+    height: auto;
   }
 
   .wrapper {
@@ -54,11 +98,6 @@ width: 50%;
     padding: 20px;
     color: #fff;
   }
-    .grid-container {
-      display: grid;
-      grid-template-columns: auto auto auto;
-  
-    }
   
     .contentWrapper{
       text-align: center;
@@ -125,76 +164,7 @@ width: 50%;
         text-align: center
     }
 
-.charitycarousel {
-    padding: 2em;
-    margin-top: 2em;
-    margin-left:2em;
-    height: 30em;
-    width: 40em;
-    background-color: rgb(223, 207, 71);
-    margin-bottom: 2em;
-    
-}
-.Cimage {
-  width:100%;
-  height:auto;
-  height: 30em;
-    width: 40em;
-}
-.col-md-4 {
-    background-color: rgb(255, 255, 255);
-    font-size: large;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-weight: bold;
-    justify-content: center;
-    text-align: left;
-    margin-top:2em;
-    margin-left: 1em;
-}
-#cwbutton {
-    font-size: medium;
-    margin-bottom: 30px;
-}
-
-/* Nav Bar */
-
-/* a, .navbar-nav, .navbar-light .nav-link {
-  color:  white;
-  height: 2.5em;
-  font-size: 1.3em;
-  float: left;
-  background-color: inherit;
-  font-family: inherit;
-  margin: 0;
-}
-
-a, .navbar-nav, .navbar-light .nav-link:hover {
-  color: white;
-}
 
 
-.navbar-brand {
-  font-size: 2.2em;
-  color:  slategray;
-}
-
-.navbar-brand:hover {
-  color: white;
-}
 
 
-@media screen and (min-width: 768px) {
-  button {
-      display: none;
-      color: white;
-  }
-  .links {
-      height: auto;
-      display: auto;
-  }
-  li {
-      padding: 15px;
-      background-color: black;
-  }
-}
- */
