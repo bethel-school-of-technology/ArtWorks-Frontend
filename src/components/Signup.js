@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import axios from 'axios';
 import './Signup.css'
-{/*import styled from 'styled-components';*/}
+{/*import styled from 'styled-components';*/ }
 
 
 
@@ -30,7 +30,7 @@ class Signup extends Component {
 
 			<div className="App">
 				<div className="main">
-					<div className="container">
+					<div className="container-signup">
 						<header>
 							<h1>
 								<a href="https://freeimage.host/i/d9EZDN"><img src="https://iili.io/d9EZDN.png" alt="d9EZDN.png" /></a>
