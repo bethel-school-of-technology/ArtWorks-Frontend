@@ -1,0 +1,21 @@
+@import url(https://fonts.googleapis.com/css?family=Cookie|Montserrat:300,700,400);
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(8, 5vw);
+    grid-gap: 15px;
+}
+h1{
+	font-size: 3em;
+	margin: 0 0 0.5em 0;
+	text-align: center;
+}
+
+html{
+	font-size: 14px;
+	height: 100%;
+}
+
+.text-center{
+	text-align: center;
+} 
