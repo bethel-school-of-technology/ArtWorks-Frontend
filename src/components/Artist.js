@@ -1,13 +1,9 @@
 import React, { Component } from 'react';
 import axios from 'axios';
-import './Signup.css'
-{/*import styled from 'styled-components';*/ }
+import './Artist.css'
 
 
-
-
-
-class Signup extends Component {
+class Artist extends Component {
 	state={
 		name: '',
 		email: '',
@@ -67,4 +63,4 @@ class Signup extends Component {
 	}
 }
 
-export default Signup;
+export default Artist;

@@ -16,8 +16,9 @@ const NavigationBar=props => (
                 <ul>
                     <li><a href="/">Home</a> </li>
                     <li><a href="/gallery">Gallery</a></li>
-                    <li><a href="/submit">Submit Artwork</a></li>
+                    <li><a href="/add-submissions">Submit Artwork</a></li>
                     <li><a href="/store">Store</a></li>
+                    <li><a href="/admin">Login</a></li>
 
                 </ul>
             </div>

@@ -9,8 +9,10 @@ import Backdrop from './components/Backdrop/Backdrop';
 import AWFooter from './components/AWFooter';
 import {Home} from './Home';
 import Gallery from './components/Gallery';
-import Signup from './components/Signup';
+import Artist from './components/Artist';
 import Store from './Store';
+import Admin from './components/Admin';
+import AdminView from './components/AdminView';
 import history from "./utils/history";
 
 
@@ -45,8 +47,10 @@ class App extends Component {
                                 <Route exact path="/" component={Home} />
                                 <Route exact path="/home" component={Home} />
                                 <Route path="/gallery" component={Gallery} />
-                                <Route path="/submit" component={Signup} />
+                                <Route path="/add-submissions" component={Artist} />
                                 <Route path="/store" component={Store} />
+                                <Route path="/admin" component={Admin} />
+                                <Route path="/admin-gallery" component={AdminView} />
                             </Switch>
                         </main>
                     </Router>
