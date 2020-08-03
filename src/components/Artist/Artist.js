@@ -14,7 +14,7 @@ class Artist extends Component {
 	handleChange=({ target: { value, name } }) => this.setState({ [name]: value })
 
 	formSubmission=() => {
-		axios.post('http://localhost:3001/users/signup', this.state)
+		axios.post('http://localhost:3001/users/add-submissions', this.state)
 			.then(res => {
 				console.log(res);
 			})
