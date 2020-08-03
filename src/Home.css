@@ -1,7 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:wght@500&display=swap');
-/* Home */
-
-/* .jumbotron-body {
+.jumbotron-body {
     background-position: center;
     color: #123f62;
     background-image: url("./assets/background-color.png");
@@ -65,9 +62,9 @@
 }
 
 .grid-2 {
-  justify-content: center;
+  /* justify-content: center;
   align-content: center;
-  min-width: 400px;
+  min-width: 400px; */
   margin-left: auto;
   margin-right: auto;
   justify-content: center;
@@ -83,12 +80,4 @@
     border-radius: 50%;
     width: 10px;
     height: 10px;
-} */
-
-
-
-
-
-
-
-
+}

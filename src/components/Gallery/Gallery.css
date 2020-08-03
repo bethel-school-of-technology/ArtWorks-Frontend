@@ -2,14 +2,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Fira+Sans+Condensed:wght@500&display=swap');
 /* Gallery */
 .gHeader {
+    font-family: URW Chancery L, cursive;
     font-size: 4em;
     text-align: center;
       }
-
-.gallery-img {
-  max-width: 100%;
-  height: auto;
-}
   
   .gallery{
     background-size: cover;
@@ -24,7 +20,6 @@
   .wrapper {
     background:   rgb(248, 239, 186,0.75);
     padding: 20px;
-    color: #fff;
   }
   
     .contentWrapper{
@@ -60,6 +55,7 @@
     .each-grid {
       border: 3px solid #123f62;
       background-color: white;
+      font-family: URW Chancery L, cursive;
       padding: 1rem;
     }
   

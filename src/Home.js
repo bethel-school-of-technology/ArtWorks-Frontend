@@ -6,6 +6,8 @@ import { Button } from 'react-bootstrap';
 import CWLogo from './assets/charitywaterlogo.png';
 import Logo from './assets/Artworkslogo.png';
 
+import './Home.css'
+
 
 
 export const Home=(props) => (
