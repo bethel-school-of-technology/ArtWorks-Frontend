@@ -10,15 +10,15 @@ const NavigationBar=props => (
             <div className="nav-toggle-button" >
                 <DrawerToggleButton click={props.drawerClickHandler} />
             </div>
-            <div className="nav-logo"> <a href="/"><img src={Logo} alt=""/> </a></div>
+            <div className="nav-logo"> <a href="/"><img src={Logo} alt="" /> </a></div>
             <div className="spacer" />
             <div className="nav-items">
                 <ul>
                     <li><a href="/">Home</a> </li>
-                    <li><a href="/gallery">Gallery</a></li>
-                    <li><a href="/add-submissions">Submit Artwork</a></li>
-                    <li><a href="/store">Store</a></li>
                     <li><a href="/admin">Login</a></li>
+                    <li><a href="/add-submissions">Submit Artwork</a></li>
+                    <li><a href="/gallery">Gallery</a></li>
+                    <li><a href="/store">Store</a></li>
 
                 </ul>
             </div>

@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:wght@500&display=swap');
+
 .side-drawer {
     height: 100%;
     background:rgb(18,63,98);
@@ -26,6 +28,7 @@
 
 .side-drawer li {
     margin: 0.5rem 0;
+    font-family: 'Fira Sans', sans-serif;
 }
 
 .side-drawer img {  
@@ -44,12 +47,12 @@
     text-decoration: none;
     font-size: 1.7rem;
     padding: 1rem;
-    font-family: URW Chancery L, cursive;
 }
 
 .side-drawer a:hover,
 .side-drawer a:active {
     color: rgb(248, 239, 186);
+    text-decoration: none;
 }
 
 @media (min-width: 769px) {

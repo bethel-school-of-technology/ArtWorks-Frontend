@@ -12,12 +12,12 @@ const sideDrawer=props => {
     return (
         <nav className={drawerClasses}>
             <ul>
-                <li ><img className="side-drawer-logo" src={Logo}></img> </li>
+                <li ><img className="side-drawer-logo" src={Logo} alt="" ></img> </li>
                 <li><a href="/">Home</a> </li>
-                <li><a href="/gallery">Gallery</a></li>
-                <li><a href="/add-submissions">Submit Artwork</a></li>
-                <li><a href="/store">Store</a></li>
                 <li><a href="/admin">Login</a></li>
+                <li><a href="/add-submissions">Submit Artwork</a></li>
+                <li><a href="/gallery">Gallery</a></li>
+                <li><a href="/store">Store</a></li>
             </ul>
         </nav>
     );

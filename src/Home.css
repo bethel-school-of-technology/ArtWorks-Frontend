@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Fira+Sans+Condensed:wght@500&display=swap');
+
 .jumbotron-body {
     background-position: center;
     color: #123f62;
@@ -7,6 +9,13 @@
     box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
     min-width: 450px;
 }
+
+.welcome {
+    font-family: 'Dancing script', cursive;
+    font-size: 100px;
+    text-align: center;
+}
+
 .about {
     background-color: rgba(255, 244, 149, 0.87);
     padding: 4em;
@@ -15,6 +24,7 @@
 .about p {
     font: bolder;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
 }
 
 .home {

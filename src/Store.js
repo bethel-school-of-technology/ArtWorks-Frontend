@@ -1,6 +1,5 @@
 import React from 'react';
 import './Store.css';
-import {Row,Col}from 'react-bootstrap';
 import { Button } from 'react-bootstrap';
 
 
@@ -16,7 +15,7 @@ const Store=() => {
           <h2> Provide clean water to those without</h2>
           <h2>Provide a future of hope to those that might not of had one </h2>
           <h2>Bring Life</h2>
-         <Button id='cwbutton' href="https://www.bonfire.com/" variant="info">Purchase Here</Button>
+          <Button id='cwbutton' href="https://www.bonfire.com/" variant="info">Purchase Here</Button>
 
         </div>
 
@@ -42,28 +41,28 @@ const Store=() => {
 
 
                 </div>
-                </div>
               </div>
             </div>
-
-            <a className="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-              <span className="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span className="sr-only">Previous</span>
-            </a>
-
-            <a className="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-              <span className="carousel-control-next-icon" aria-hidden="true"></span>
-              <span className="sr-only">Next</span>
-            </a>
-
-            
-
-            <footer class="bg-warning">
-              <p ></p>
-            </footer>
-
           </div>
-       
+
+          <a className="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+            <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span className="sr-only">Previous</span>
+          </a>
+
+          <a className="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+            <span className="carousel-control-next-icon" aria-hidden="true"></span>
+            <span className="sr-only">Next</span>
+          </a>
+
+
+
+          <footer class="bg-warning">
+            <p ></p>
+          </footer>
+
+        </div>
+
       </div>
     </body>
 

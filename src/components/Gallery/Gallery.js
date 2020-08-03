@@ -3,7 +3,6 @@ import Instagram from '../../assets/instagram.png';
 import Email from '../../assets/email.png';
 import Facebook from '../../assets/facebook.png';
 import Portfolio from '../../assets/portfolio.png';
-import Header from '../../assets/galleryHeader.png';
 
 import './Gallery.css'
 import axios from 'axios';
@@ -47,6 +46,7 @@ class Gallery extends Component {
       this.setState({
         count: newCount
       })
+
       axios.post('http://localhost:3001/users/gallery/'+this.state.artists[index]._id, { count: newCount[index] })
         .then(res => {
           console.log(res);
@@ -59,19 +59,19 @@ class Gallery extends Component {
 
   render () {
     return (
-      <div className="gallery">
-        <div className="wrapper">
+      <body className="user-gallery">
+        <div className="gWrapper">
           <header className="gHeader">
-            <img src={Header} className="gallery-img" alt="" />
-          </header>
+            Gallery
+            </header>
         </div>
 
-        <section className="art-grid" >
+        <article className="art-grid" >
           <div className="grid-container">
             {this.state.artists.map((art, index) => (
               <div className="each-grid" key={index}>
-                <div className="artist-name" ><h4>{art.Name}</h4></div>
-                <div  > <img src={art.Photo} className="art-photo" alt="" /></div>
+                <div className="artist-name" >{art.Name}</div>
+                <div> <img src={art.Photo} className="art-photo" alt="" /></div>
                 <div>
                   <button className="voteButton" onClick={() => this.incrementMe(index)}>Vote: {this.state.count[index]} </button>
                 </div>
@@ -84,8 +84,9 @@ class Gallery extends Component {
               </div>
             ))}
           </div>
-        </section>
-      </div>
+        </article>
+
+      </body>
     )
   }
 }
