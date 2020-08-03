@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Fira+Sans+Condensed:wght@500&display=swap');
+
+.jumbotron-body {
+    background-position: center;
+    color: #123f62;
+    background-image: url("./assets/background-color.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    min-width: 450px;
+}
+
+.welcome {
+    font-family: 'Dancing script', cursive;
+    font-size: 100px;
+    text-align: center;
+}
+
+.about {
+    background-color: rgba(255, 244, 149, 0.87);
+    padding: 4em;
+}
+
+.about p {
+    font: bolder;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+
+.home {
+  padding: 2rem;
+  margin: 2rem 0;
+}
+.row1 {
+  display: grid;
+  background-color:  rgb(223, 207, 71,0.7);
+  grid-template-columns: repeat(auto-fill, minmax(500px,1fr)); 
+  justify-content: center;
+  align-content: center;
+  grid-gap: 20px;
+  padding: 1.5em;
+  min-width: 450px;
+    margin: 1rem; 
+} 
+
+
+.grid-1 {
+    background-color: rgb(255, 255, 255);
+    font-size: large;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    margin: auto;
+    width: 400px;
+    height: 500px;
+}
+
+.grid-1 img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.grid-1 p {
+  padding: 1em;
+}
+
+#cwbutton {
+    font-size: medium;
+}
+
+.grid-2 {
+  /* justify-content: center;
+  align-content: center;
+  min-width: 400px; */
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: center;
+    align-content: center;
+    text-align: center;
+    width: 400px;
+    height: 500px;
+    overflow: hidden;
+    object-fit: cover;
+    padding-top: 40px;
+}
+.carousel-indicators li {
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+}

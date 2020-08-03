@@ -1,0 +1,42 @@
+#carouselExampleControls
+{
+  margin-left: 200px;
+  margin-right: 200px;
+  margin-bottom: 20px;
+  border:3px solid black;
+  background-color: black;
+  
+}
+
+h1{
+  font-family: URW Chancery L;
+  color: rgb(18,63,98);
+  font-weight: bold;
+
+}
+
+body{
+  background: url(http://www.pixelstalk.net/wp-content/uploads/2016/05/Watercolor-wallpaper-backgrounds-pictures.jpg) no-repeat center fixed;
+  background-size: cover;
+
+}
+
+h2{
+  font-family: URW Chancery L;
+  color:rgb(18,63,98);
+
+}
+
+.col-sm-12{
+  margin:1rem;
+  background:   rgb(248, 239, 186,0.75);
+  padding: 20px;
+  color: #fff;
+  text-align: center;
+  font-size: 26px;
+}
+
+.carousel-item img {
+  width: 100%;
+  height: auto;
+}

@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:wght@500&display=swap');
+
+.side-drawer {
+    height: 100%;
+    background:rgb(18,63,98);
+    box-shadow: 1px 0px 7px rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 70%;
+    max-width: 200px;
+    z-index: 200;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease-out;
+}
+
+.side-drawer.open {
+    transform: translateX(0);
+}
+
+.side-drawer ul {
+    height: 100%;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: top;
+}
+
+.side-drawer li {
+    margin: 0.5rem 0;
+    font-family: 'Fira Sans', sans-serif;
+}
+
+.side-drawer img {  
+    display: block;
+    height: auto;
+    width: 75%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+.side-drawer-logo {
+    text-align: center;
+}
+.side-drawer a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.7rem;
+    padding: 1rem;
+}
+
+.side-drawer a:hover,
+.side-drawer a:active {
+    color: rgb(248, 239, 186);
+    text-decoration: none;
+}
+
+@media (min-width: 769px) {
+    .side-drawer {
+        display: none;
+    }
+}

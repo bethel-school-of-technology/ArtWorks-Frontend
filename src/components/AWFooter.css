@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Fira+Sans+Condensed:wght@500&display=swap');
+
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: rgb(18,63,98);
+    height: 56px;
+}
+.footer-bar {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    padding: 0 1rem;
+}
+
+.footer-logo {
+    margin-left: 1rem;
+}
+
+.footer-logo img {  
+    height: 45px;
+    width: 45px;
+}
+
+.footer-items a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-items ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.footer-items li {
+    color: white;
+    padding: 0 1.5rem;
+    font-size: 1.5rem;
+    font-family: 'Fira Sans', sans-serif;
+}
+
+.footer-items a:hover,
+.footer-items a:active {
+    color: rgb(248, 239, 186);
+    text-decoration: none;
+}
+
+/* footer {
+    display: flex;
+      background: #222;
+      font: white;
+      font-size: medium;
+      position: fixed;
+      height: 64px;
+      width: 100%;
+      align-items: center;
+      justify-content: center;
+      bottom: 0;
+  
+  }
+  footer h2 {
+      color: white;
+  }
+  footer img {
+      height: 45px;
+      width: 45px;  
+  }
+   */

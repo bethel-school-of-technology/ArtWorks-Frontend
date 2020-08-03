@@ -1,51 +1,94 @@
-li {
-    padding: 10px 0;
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:wght@500&display=swap');
+/* Home */
+
+/* .jumbotron-body {
+    background-position: center;
+    color: #123f62;
+    background-image: url("./assets/background-color.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    min-width: 450px;
+}
+.about {
+    background-color: rgba(255, 244, 149, 0.87);
+    padding: 4em;
 }
 
-button {
-    font-size: 30px;
-    margin-right: 30px;
-    color: white;
-    background: transparent;
-    border: none;
-    cursor: pointer;
-    outline: none;
-    float: right;
+.about p {
+    font: bolder;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-
-/* Class */
-
-.navBar {
-    width: 100%;
-    background-color: #111;
-    color: white;
-    padding: 10px;
+.home {
+  padding: 2rem;
+  margin: 2rem 0;
 }
+.row1 {
+  display: grid;
+  background-color:  rgb(223, 207, 71,0.7);
+  grid-template-columns: repeat(auto-fill, minmax(500px,1fr)); 
+  justify-content: center;
+  align-content: center;
+  grid-gap: 20px;
+  padding: 1.5em;
+  min-width: 450px;
+    margin: 1rem; 
+} 
 
-.links {
-    height: 0;
-    overflow: hidden;
-    list-style-type: none;
+
+.grid-1 {
+    background-color: rgb(255, 255, 255);
+    font-size: large;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-weight: bold;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    margin: auto;
+    width: 400px;
+    height: 500px;
 }
 
-.show-nav {
-    height: 120px;
+.grid-1 img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-
-/* Media screen size */
-
-@media screen and (min-width: 768px) {
-    button {
-        display: none;
-    }
-    .links {
-        height: auto;
-        display: flex;
-    }
-    li {
-        padding: 0 15px;
-    }
+.grid-1 p {
+  padding: 1em;
 }
+
+#cwbutton {
+    font-size: medium;
+}
+
+.grid-2 {
+  justify-content: center;
+  align-content: center;
+  min-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: center;
+    align-content: center;
+    text-align: center;
+    width: 400px;
+    height: 500px;
+    overflow: hidden;
+    object-fit: cover;
+    padding-top: 40px;
+}
+.carousel-indicators li {
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+} */
+
+
+
+
+
+
+
+

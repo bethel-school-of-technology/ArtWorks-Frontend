@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Fira+Sans+Condensed:wght@500&display=swap');
+/* Gallery */
+
+.gHeader {
+    font-family: 'Dancing Script', cursive;
+    font-size: 5em;
+    text-align: center;
+    color: #123f62;
+      }
+  
+  .user-gallery{
+    background-size: cover;
+  
+  }
+
+
+  .gWrapper {
+    background:   rgb(248, 239, 186,0.75);
+    padding: 30px;
+  }
+  
+    .contentWrapper{
+      text-align: center;
+      padding: 5px;
+      border: 3px solid #123f62;
+    }
+  
+    .voteButton{
+      padding: 4px;
+      border-radius: 8px;
+      color: white;
+      background-color: #123f62;
+      font-family: 'Fira Sans Condensed', sans-serif;
+        transition-duration: 0.4s;
+      border: none;
+      outline: none;
+    }
+
+    .voteButton:hover {
+        cursor: pointer;
+    }
+
+    .voteButton:active {
+        background-color: #123f62;
+        transform: translateY(4px);
+        outline: none;
+        border: none;
+      }
+
+
+  
+    .logo, .email-logo {
+      text-align: center;
+      margin: 5px;
+      width: 30px;
+      height: 30px;
+    }
+  
+    .logo:hover {
+      transform: scale(0.9);
+    }
+  
+  .art-photo {
+    max-width: 100%;
+    height: 275px;
+  }
+  
+    .artInfo {
+      padding: 1em;
+    }
+  
+    .each-grid {
+     border: 3px solid #123f62;
+      background-color: white;
+      font-family: 'Dancing Script', cursive;
+      padding: 1rem; 
+    }
+  
+   .grid-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(325px, 1fr));
+      text-align: center;
+      grid-gap: 20px;
+      padding: 20px;
+      margin: 1em;
+    }
+  
+    .img {
+        width: 100%;
+        height: auto;
+    }
+  
+    .art-grid {
+        position: relative;
+    }
+  
+    .art-photo {
+        padding: 1em;
+      line-height: 0;
+      overflow: hidden;
+    }
+  
+    .artist-name {
+        text-align: center;
+        font-size: 25px;
+    }
+
+    .artist-email {
+        font-family: 'Fira Sans Condensed', sans-serif;
+    }
