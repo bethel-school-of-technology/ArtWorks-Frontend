@@ -9,10 +9,10 @@ import Backdrop from './components/Backdrop/Backdrop';
 import AWFooter from './components/AWFooter';
 import {Home} from './Home';
 import Gallery from './components/Gallery';
-import Artist from './components/Artist';
+import Artist from './components/Artist/Artist';
 import Store from './Store';
-import Admin from './components/Admin';
-import AdminView from './components/AdminView';
+import Admin from './components/Admin/Admin';
+import AdminView from './components/Admin/AdminView';
 import history from "./utils/history";
 
 
