@@ -1,7 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:wght@500&display=swap');
-/* Home */
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Fira+Sans+Condensed:wght@500&display=swap');
 
-/* .jumbotron-body {
+.jumbotron-body {
     background-position: center;
     color: #123f62;
     background-image: url("./assets/background-color.png");
@@ -10,6 +9,13 @@
     box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
     min-width: 450px;
 }
+
+.welcome {
+    font-family: 'Dancing script', cursive;
+    font-size: 100px;
+    text-align: center;
+}
+
 .about {
     background-color: rgba(255, 244, 149, 0.87);
     padding: 4em;
@@ -18,6 +24,7 @@
 .about p {
     font: bolder;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
 }
 
 .home {
@@ -65,9 +72,9 @@
 }
 
 .grid-2 {
-  justify-content: center;
+  /* justify-content: center;
   align-content: center;
-  min-width: 400px;
+  min-width: 400px; */
   margin-left: auto;
   margin-right: auto;
   justify-content: center;
@@ -83,12 +90,4 @@
     border-radius: 50%;
     width: 10px;
     height: 10px;
-} */
-
-
-
-
-
-
-
-
+}

@@ -5,8 +5,6 @@ import CharityImg3 from '../assets/charitywater5.jpg';
 import CharityImg4 from '../assets/charitywater4.jpg';
 import CharityImg5 from '../assets/charitywater8.jpg';
 
-import './CWCarousel.css'
-
 const CWCarousel=() => {
   return (
     <Carousel className='charitycarousel'>

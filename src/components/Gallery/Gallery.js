@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
-import Instagram from '../assets/instagram.png';
-import Email from '../assets/email.png';
-import Facebook from '../assets/facebook.png';
-import Portfolio from '../assets/portfolio.png';
-import Header from '../assets/galleryHeader.png';
+import Instagram from '../../assets/instagram.png';
+import Email from '../../assets/email.png';
+import Facebook from '../../assets/facebook.png';
+import Portfolio from '../../assets/portfolio.png';
 
+import './Gallery.css'
 import axios from 'axios';
 
 class Gallery extends Component {
@@ -25,9 +25,9 @@ class Gallery extends Component {
         temp.push(this.state.artists[i].Votes);
         this.setState({ count: temp });
 
-        let tempVoted= this.state.voted;
+        let tempVoted=this.state.voted;
         tempVoted.push(false);
-        this.setState({voted: tempVoted});
+        this.setState({ voted: tempVoted });
 
       }
       console.log(this.state.count);
@@ -37,43 +37,41 @@ class Gallery extends Component {
 
   incrementMe=(index) => {
     let newCount=this.state.count;
-    if (this.state.voted[index] === false) {
-      
-   
-    newCount[index]++;
-    this.state.voted[index] = true;
-    // for (let i=0; i<newCount.length; i++) {
-    //   if (i===index) {
-    //     newCount[i]++
-    //   }
-    // }
-    this.setState({
-      count: newCount
-    })
-    axios.post('http://localhost:3001/users/gallery/'+this.state.artists[index]._id, { count: newCount[index] })
-      .then(res => {
-        console.log(res);
-      }) } else {
-        window.alert('Sorry! You can only vote once per entry.');
-      }
-      
+    if (this.state.voted[index]===false) {
+
+
+      newCount[index]++;
+      this.state.voted[index]=true;
+
+      this.setState({
+        count: newCount
+      })
+
+      axios.post('http://localhost:3001/users/gallery/'+this.state.artists[index]._id, { count: newCount[index] })
+        .then(res => {
+          console.log(res);
+        })
+    } else {
+      window.alert('Sorry! You can only vote once per entry.');
+    }
+
   }
 
   render () {
     return (
-      <div className="gallery">
-        <div className="wrapper">
+      <body className="user-gallery">
+        <div className="gWrapper">
           <header className="gHeader">
-            <img src={Header} className="gallery-img" alt=""/>
-          </header>
+            Gallery
+            </header>
         </div>
 
-        <section className="art-grid" >
+        <article className="art-grid" >
           <div className="grid-container">
             {this.state.artists.map((art, index) => (
               <div className="each-grid" key={index}>
-                <div className="artist-name" ><h4>{art.Name}</h4></div>
-                <div  > <img src={art.Photo} className="art-photo" alt=""/></div>
+                <div className="artist-name" >{art.Name}</div>
+                <div> <img src={art.Photo} className="art-photo" alt="" /></div>
                 <div>
                   <button className="voteButton" onClick={() => this.incrementMe(index)}>Vote: {this.state.count[index]} </button>
                 </div>
@@ -86,8 +84,9 @@ class Gallery extends Component {
               </div>
             ))}
           </div>
-        </section>
-     </div>
+        </article>
+
+      </body>
     )
   }
 }
